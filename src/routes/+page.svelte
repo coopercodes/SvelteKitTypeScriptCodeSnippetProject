@@ -1,8 +1,7 @@
 <script lang="ts">
 	import CodeSnippetCard from "../CodeSnippetCard.svelte";
 	import { snippetStore, addSnippet } from "../SnippetStore";
-	import type { PageData } from "./$types";
-	export let data: PageData;
+	
 	
 
 	let formData : CodeSnippetInput = {
@@ -12,7 +11,8 @@
 	}
 
 	// createSnippet(input : CodeSnippetInput)
-	snippetStore.set(data.snippets);
+	
+	
 	// SnippetStore -> a local writable that allows us to store code snippets
 	// create / delete snippets
 	// favorite snippets

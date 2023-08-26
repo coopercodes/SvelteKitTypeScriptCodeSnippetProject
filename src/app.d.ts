@@ -14,10 +14,6 @@ interface CodeSnippetInput {
 	code: string
 }
 
-interface CodeSnippet {
-	title: string
-	language: string
-	code: string
-	favorite: boolean
-	// userCreated : User, createdOn: string
+interface CodeSnippet extends CodeSnippetInput {
+	favorite: boolean	
 }
